@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    druid:
+      admin:
+        url: jdbc:mysql://localhost:3306/dmp_admin?useSSL=false&characterEncoding=utf8
+        username: root
+        password: root
+        driver-class-name: com.mysql.cj.jdbc.Driver
+      demo:
+        url: jdbc:mysql://localhost:3306/cdsic?useSSL=false&characterEncoding=utf8
+        username: root
+        password: root
+        driver-class-name: com.mysql.cj.jdbc.Driver
+# 日志配置
+logging:
+  level:
+    root: INFO
+    com:
+      bolingcavalry:
+        druidtwosource:
+          mapper: debug

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzq.demo.dao.StudentDao">
+
+    <!--按照名称查找-->
+    <select id="getAllStudent"  resultType="com.wzq.demo.bean.Student">
+        select * from c_student
+    </select>
+
+</mapper>
